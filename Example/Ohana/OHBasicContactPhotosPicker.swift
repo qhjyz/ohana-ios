@@ -24,8 +24,10 @@
 //
 
 import UIKit
-import Ohana
+import ohana
 
+@objc
+open
 class OHBasicContactPhotosPicker : UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate {
 
     var dataSource: OHContactsDataSource!

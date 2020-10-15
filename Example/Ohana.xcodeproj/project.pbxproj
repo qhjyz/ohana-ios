@@ -3,17 +3,84 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0147B9BD30C4A4CF28D2E37D /* Pods_OhanaExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86E366F278730BC29A5049F /* Pods_OhanaExample.framework */; };
+		371E0D3325369F9C00665416 /* ohana.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D3125369F9C00665416 /* ohana.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		371E0D8E25369FE900665416 /* OHContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4225369FC600665416 /* OHContactsDataSource.m */; };
+		371E0D8F25369FE900665416 /* OHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4325369FC600665416 /* OHContact.m */; };
+		371E0D9025369FE900665416 /* OHContactsDataProviderProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4625369FC600665416 /* OHContactsDataProviderProtocol.m */; };
+		371E0D9125369FE900665416 /* OHContactField.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4B25369FC600665416 /* OHContactField.m */; };
+		371E0D9225369FE900665416 /* OHContactAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4C25369FC600665416 /* OHContactAddress.m */; };
+		371E0D9325369FE900665416 /* OHFuzzyMatchingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5025369FC600665416 /* OHFuzzyMatchingUtility.m */; };
+		371E0D9425369FE900665416 /* OHCNContactsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5425369FC600665416 /* OHCNContactsDataProvider.m */; };
+		371E0D9525369FE900665416 /* OHABAddressBookContactsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5725369FC600665416 /* OHABAddressBookContactsDataProvider.m */; };
+		371E0D9625369FE900665416 /* OHSplitOnFieldTypePostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5B25369FC600665416 /* OHSplitOnFieldTypePostProcessor.m */; };
+		371E0D9725369FE900665416 /* OHAlphabeticalSortPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5D25369FC600665416 /* OHAlphabeticalSortPostProcessor.m */; };
+		371E0D9825369FE900665416 /* OHRequiredFieldPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5F25369FC600665416 /* OHRequiredFieldPostProcessor.m */; };
+		371E0D9925369FE900665416 /* OHCompositeAndPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6125369FC600665416 /* OHCompositeAndPostProcessor.m */; };
+		371E0D9A25369FE900665416 /* OHCompositeOrPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6225369FC600665416 /* OHCompositeOrPostProcessor.m */; };
+		371E0D9B25369FE900665416 /* OHCompositeXorPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6325369FC600665416 /* OHCompositeXorPostProcessor.m */; };
+		371E0D9C25369FE900665416 /* OHStatisticsPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6725369FC600665416 /* OHStatisticsPostProcessor.m */; };
+		371E0D9D25369FE900665416 /* OHReverseOrderPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6825369FC600665416 /* OHReverseOrderPostProcessor.m */; };
+		371E0D9E25369FE900665416 /* OHPhoneNumberFormattingPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6925369FC600665416 /* OHPhoneNumberFormattingPostProcessor.m */; };
+		371E0D9F25369FE900665416 /* OHRequiredPostalAddressPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6D25369FC600665416 /* OHRequiredPostalAddressPostProcessor.m */; };
+		371E0DA025369FE900665416 /* OHMinimumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6F25369FC600665416 /* OHMinimumSelectedCountSelectionFilter.m */; };
+		371E0DA125369FE900665416 /* OHMaximumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7125369FC600665416 /* OHMaximumSelectedCountSelectionFilter.m */; };
+		371E0DA225369FE900665416 /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */; };
+		371E0DF52536A47A00665416 /* UberSignals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0DDF2536A46C00665416 /* UberSignals.framework */; };
+		371E0DF62536A47A00665416 /* UberSignals.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0DDF2536A46C00665416 /* UberSignals.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		371E0E6A2536A99200665416 /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */; platformFilter = ios; };
+		371E0E6B2536A99200665416 /* libPhoneNumberiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		371E0E702536ABF900665416 /* OHPhoneNumberFormattingPostProcessor.h in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */; };
+		37C9E20D2536C305000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
+		37C9E20F2536C35D000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
+		37C9E2102536C35D000E9655 /* ohana.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		37C9E2192536C3E8000E9655 /* OHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* OHAppDelegate.m */; };
+		37C9E21A2536C3E8000E9655 /* OHExampleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E429F1D5716CE009780F0 /* OHExampleListTableViewController.m */; };
+		37C9E21B2536C3E8000E9655 /* OHBasicContactPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42A61D571B6C009780F0 /* OHBasicContactPickerTableViewController.m */; };
+		37C9E21C2536C3E8000E9655 /* OHPhoneNumberPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42AD1D58F4AB009780F0 /* OHPhoneNumberPickerTableViewController.m */; };
+		37C9E21D2536C3E8000E9655 /* OHContactSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42B01D58F87F009780F0 /* OHContactSelectionTableViewController.m */; };
+		37C9E21E2536C3E8000E9655 /* OHFuzzySearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7FC081D59C57C001F427C /* OHFuzzySearchTableViewController.m */; };
+		37C9E21F2536C3E8000E9655 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
+		37C9E2212536C468000E9655 /* OhanaExample-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 3DA758E91D5AC15200CA601F /* OhanaExample-Bridging-Header.h */; };
+		37C9E2272536C62E000E9655 /* OHContactField.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4125369FC600665416 /* OHContactField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2282536C62E000E9655 /* OhanaCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4425369FC600665416 /* OhanaCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2292536C62E000E9655 /* OHContactAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4525369FC600665416 /* OHContactAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E22A2536C62E000E9655 /* OHContactsSelectionFilterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4725369FC600665416 /* OHContactsSelectionFilterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E22B2536C62E000E9655 /* OHContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4825369FC600665416 /* OHContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E22C2536C62E000E9655 /* OHContactsPostProcessorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4925369FC600665416 /* OHContactsPostProcessorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E22D2536C62E000E9655 /* OHContactsDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4A25369FC600665416 /* OHContactsDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E22E2536C62E000E9655 /* OHContactsDataProviderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4D25369FC600665416 /* OHContactsDataProviderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E22F2536C62E000E9655 /* OHFuzzyMatchingUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D4F25369FC600665416 /* OHFuzzyMatchingUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2302536C62E000E9655 /* OhanaUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5125369FC600665416 /* OhanaUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2312536C62E000E9655 /* OHABAddressBookContactsDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5525369FC600665416 /* OHABAddressBookContactsDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2322536C62E000E9655 /* OHCNContactsDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5625369FC600665416 /* OHCNContactsDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2332536C62E000E9655 /* OHReverseOrderPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5925369FC600665416 /* OHReverseOrderPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2342536C62E000E9655 /* OHStatisticsPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5A25369FC600665416 /* OHStatisticsPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2352536C62E000E9655 /* OHPhoneNumberFormattingPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2362536C62E000E9655 /* OHRequiredPostalAddressPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D5E25369FC600665416 /* OHRequiredPostalAddressPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2372536C62E000E9655 /* OHCompositeAndPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D6425369FC600665416 /* OHCompositeAndPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2382536C62F000E9655 /* OHCompositeOrPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D6525369FC600665416 /* OHCompositeOrPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2392536C62F000E9655 /* OHCompositeXorPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D6625369FC600665416 /* OHCompositeXorPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E23A2536C62F000E9655 /* OHSplitOnFieldTypePostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D6A25369FC600665416 /* OHSplitOnFieldTypePostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E23B2536C62F000E9655 /* OHAlphabeticalSortPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D6B25369FC600665416 /* OHAlphabeticalSortPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E23C2536C62F000E9655 /* OHRequiredFieldPostProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D6C25369FC600665416 /* OHRequiredFieldPostProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E23D2536C62F000E9655 /* OHRequiredFieldSelectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D7025369FC600665416 /* OHRequiredFieldSelectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E23E2536C62F000E9655 /* OHMaximumSelectedCountSelectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D7225369FC600665416 /* OHMaximumSelectedCountSelectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E23F2536C62F000E9655 /* OHMinimumSelectedCountSelectionFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D7425369FC600665416 /* OHMinimumSelectedCountSelectionFilter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2402536C62F000E9655 /* OhanaCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 371E0D7525369FC600665416 /* OhanaCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37C9E2462536C833000E9655 /* OHBasicContactPhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1880CC1D5BCD58003F180A /* OHBasicContactPhotosPicker.swift */; };
+		37C9E2472536C833000E9655 /* OHPhoneOrEmailPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA758EA1D5AC15300CA601F /* OHPhoneOrEmailPicker.swift */; };
+		37C9E2482536C833000E9655 /* OHStatisticsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA758EC1D5B23D800CA601F /* OHStatisticsExample.swift */; };
+		37C9E2492536C833000E9655 /* OHSMSPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA91341D5B9BF70034644A /* OHSMSPicker.swift */; };
+		37C9E24A2536C833000E9655 /* OHMaximumSelectedCountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA91381D5BC3F90034644A /* OHMaximumSelectedCountPicker.swift */; };
 		3D0089C61D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */; };
 		3D0089CC1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */; };
 		3D0089D21D56EEBD00D6863A /* OHRequiredFieldPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089D11D56EEBD00D6863A /* OHRequiredFieldPostProcessorTests.m */; };
 		3D0089D81D56F33800D6863A /* OHStatisticsPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089D71D56F33800D6863A /* OHStatisticsPostProcessorTests.m */; };
 		3D0089DE1D56F7BC00D6863A /* OHSplitOnFieldTypePostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D0089DD1D56F7BC00D6863A /* OHSplitOnFieldTypePostProcessorTests.m */; };
-		3D1880CD1D5BCD58003F180A /* OHBasicContactPhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1880CC1D5BCD58003F180A /* OHBasicContactPhotosPicker.swift */; };
 		3D25B12B1D593BF20040481B /* OHRequiredPostalAddressPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D25B12A1D593BF20040481B /* OHRequiredPostalAddressPostProcessorTests.m */; };
 		3D25B12D1D593D160040481B /* OHRequiredFieldSelectionFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D25B12C1D593D160040481B /* OHRequiredFieldSelectionFilterTests.m */; };
 		3D25B1361D596E450040481B /* OHReverseOrderPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D25B1351D596E450040481B /* OHReverseOrderPostProcessorTests.m */; };
@@ -21,37 +88,122 @@
 		3D25B1421D598C6B0040481B /* OHPhoneNumberFormattingPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D25B1411D598C6B0040481B /* OHPhoneNumberFormattingPostProcessorTests.m */; };
 		3D3DC6BA1D556E5A00C9C25A /* OHCNContactsDataProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D3DC6B91D556E5A00C9C25A /* OHCNContactsDataProviderTests.m */; };
 		3D571C121D56FF7600531623 /* OHMaximumSelectedCountSelectionFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D571C111D56FF7600531623 /* OHMaximumSelectedCountSelectionFilterTests.m */; };
-		3D8E42A01D5716CE009780F0 /* OHExampleListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E429F1D5716CE009780F0 /* OHExampleListTableViewController.m */; };
 		3D8E42A41D571A34009780F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D8E42A31D571A34009780F0 /* LaunchScreen.storyboard */; };
-		3D8E42A71D571B6C009780F0 /* OHBasicContactPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42A61D571B6C009780F0 /* OHBasicContactPickerTableViewController.m */; };
-		3D8E42AE1D58F4AB009780F0 /* OHPhoneNumberPickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42AD1D58F4AB009780F0 /* OHPhoneNumberPickerTableViewController.m */; };
-		3D8E42B11D58F87F009780F0 /* OHContactSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42B01D58F87F009780F0 /* OHContactSelectionTableViewController.m */; };
 		3D8E42B31D590208009780F0 /* OHContactsDataSourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D8E42B21D590208009780F0 /* OHContactsDataSourceTests.m */; };
-		3DA758EB1D5AC15300CA601F /* OHPhoneOrEmailPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA758EA1D5AC15300CA601F /* OHPhoneOrEmailPicker.swift */; };
-		3DA758ED1D5B23D800CA601F /* OHStatisticsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA758EC1D5B23D800CA601F /* OHStatisticsExample.swift */; };
 		3DB797641D5709C600C2B6D3 /* OHMinimumSelectedCountSelectionFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DB797631D5709C600C2B6D3 /* OHMinimumSelectedCountSelectionFilterTests.m */; };
 		3DC89D7C1D5A78E200F33BE6 /* OHCompositeXorPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC89D7B1D5A78E200F33BE6 /* OHCompositeXorPostProcessorTests.m */; };
 		3DD310D71D5574B80096C054 /* OHAlphabeticalSortPostProcessorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD310D61D5574B80096C054 /* OHAlphabeticalSortPostProcessorTests.m */; };
 		3DDA91321D5B988A0034644A /* OHContactTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA91311D5B988A0034644A /* OHContactTests.m */; };
-		3DDA91351D5B9BF70034644A /* OHSMSPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA91341D5B9BF70034644A /* OHSMSPicker.swift */; };
 		3DDA91371D5BA6980034644A /* OHFuzzyMatchingUtilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA91361D5BA6980034644A /* OHFuzzyMatchingUtilityTests.m */; };
-		3DDA91391D5BC3F90034644A /* OHMaximumSelectedCountPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDA91381D5BC3F90034644A /* OHMaximumSelectedCountPicker.swift */; };
-		3DE7FC091D59C57C001F427C /* OHFuzzySearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DE7FC081D59C57C001F427C /* OHFuzzySearchTableViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* OHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* OHAppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		A504D3EA580FB3BB33B3F542 /* Pods_OhanaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 070769B546BD01B9D04E1E1B /* Pods_OhanaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		371E0DDE2536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72FED2061B2C97C400DCAB7E;
+			remoteInfo = "UberSignals iOS";
+		};
+		371E0DE02536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5EBEBDAF1C162DE000E8CA02;
+			remoteInfo = "UberSignals OSX";
+		};
+		371E0DE22536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7249931B1C41DFFE006653CB;
+			remoteInfo = "UberSignals tvOS";
+		};
+		371E0DE42536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724993371C41E021006653CB;
+			remoteInfo = "UberSignals watchOS";
+		};
+		371E0DE62536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72FED2111B2C97C400DCAB7E;
+			remoteInfo = "UberSignals iOS Tests";
+		};
+		371E0DE82536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B643B47C1C1EE50D00BE2A3B;
+			remoteInfo = "UberSignals OSX Tests";
+		};
+		371E0DEA2536A46C00665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 724993241C41DFFE006653CB;
+			remoteInfo = "UberSignals tvOS Tests";
+		};
+		371E0E592536A98500665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34ACBB851B7122AC0064B3BD;
+			remoteInfo = libPhoneNumberiOS;
+		};
+		371E0E5B2536A98500665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14B7A2931DE9B65D0051AED7;
+			remoteInfo = libPhoneNumberiOSTests;
+		};
+		371E0E5D2536A98500665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0FC0D36424A29F510087AFCF;
+			remoteInfo = libPhoneNumberGeocoding;
+		};
+		371E0E5F2536A98500665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0FC0D37624A2A05E0087AFCF;
+			remoteInfo = libPhoneNumberGeocodingTests;
+		};
+		371E0E612536A98500665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9407258B24BE768A0011AE05;
+			remoteInfo = libPhoneNumberShortNumber;
+		};
+		371E0E632536A98500665416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9407259324BE768A0011AE05;
+			remoteInfo = libPhoneNumberShortNumberTests;
+		};
+		37C9E2152536C39E000E9655 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 371E0D2E25369F9B00665416;
+			remoteInfo = ohana;
+		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -61,9 +213,87 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		371E0DF72536A47B00665416 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				371E0E6B2536A99200665416 /* libPhoneNumberiOS.framework in Embed Frameworks */,
+				371E0DF62536A47A00665416 /* UberSignals.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37C9E2132536C35E000E9655 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37C9E2102536C35D000E9655 /* ohana.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		070769B546BD01B9D04E1E1B /* Pods_OhanaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EAB4D807A963449591E2EA8 /* Pods-OhanaExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample.release.xcconfig"; sourceTree = "<group>"; };
+		371E0D2F25369F9B00665416 /* ohana.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ohana.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		371E0D3125369F9C00665416 /* ohana.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ohana.h; sourceTree = "<group>"; };
+		371E0D3225369F9C00665416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		371E0D4125369FC600665416 /* OHContactField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContactField.h; sourceTree = "<group>"; };
+		371E0D4225369FC600665416 /* OHContactsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHContactsDataSource.m; sourceTree = "<group>"; };
+		371E0D4325369FC600665416 /* OHContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHContact.m; sourceTree = "<group>"; };
+		371E0D4425369FC600665416 /* OhanaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhanaCore.h; sourceTree = "<group>"; };
+		371E0D4525369FC600665416 /* OHContactAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContactAddress.h; sourceTree = "<group>"; };
+		371E0D4625369FC600665416 /* OHContactsDataProviderProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHContactsDataProviderProtocol.m; sourceTree = "<group>"; };
+		371E0D4725369FC600665416 /* OHContactsSelectionFilterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContactsSelectionFilterProtocol.h; sourceTree = "<group>"; };
+		371E0D4825369FC600665416 /* OHContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContact.h; sourceTree = "<group>"; };
+		371E0D4925369FC600665416 /* OHContactsPostProcessorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContactsPostProcessorProtocol.h; sourceTree = "<group>"; };
+		371E0D4A25369FC600665416 /* OHContactsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContactsDataSource.h; sourceTree = "<group>"; };
+		371E0D4B25369FC600665416 /* OHContactField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHContactField.m; sourceTree = "<group>"; };
+		371E0D4C25369FC600665416 /* OHContactAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHContactAddress.m; sourceTree = "<group>"; };
+		371E0D4D25369FC600665416 /* OHContactsDataProviderProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHContactsDataProviderProtocol.h; sourceTree = "<group>"; };
+		371E0D4F25369FC600665416 /* OHFuzzyMatchingUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHFuzzyMatchingUtility.h; sourceTree = "<group>"; };
+		371E0D5025369FC600665416 /* OHFuzzyMatchingUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHFuzzyMatchingUtility.m; sourceTree = "<group>"; };
+		371E0D5125369FC600665416 /* OhanaUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhanaUtilities.h; sourceTree = "<group>"; };
+		371E0D5425369FC600665416 /* OHCNContactsDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCNContactsDataProvider.m; sourceTree = "<group>"; };
+		371E0D5525369FC600665416 /* OHABAddressBookContactsDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHABAddressBookContactsDataProvider.h; sourceTree = "<group>"; };
+		371E0D5625369FC600665416 /* OHCNContactsDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCNContactsDataProvider.h; sourceTree = "<group>"; };
+		371E0D5725369FC600665416 /* OHABAddressBookContactsDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHABAddressBookContactsDataProvider.m; sourceTree = "<group>"; };
+		371E0D5925369FC600665416 /* OHReverseOrderPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHReverseOrderPostProcessor.h; sourceTree = "<group>"; };
+		371E0D5A25369FC600665416 /* OHStatisticsPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHStatisticsPostProcessor.h; sourceTree = "<group>"; };
+		371E0D5B25369FC600665416 /* OHSplitOnFieldTypePostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHSplitOnFieldTypePostProcessor.m; sourceTree = "<group>"; };
+		371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHPhoneNumberFormattingPostProcessor.h; sourceTree = "<group>"; };
+		371E0D5D25369FC600665416 /* OHAlphabeticalSortPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHAlphabeticalSortPostProcessor.m; sourceTree = "<group>"; };
+		371E0D5E25369FC600665416 /* OHRequiredPostalAddressPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHRequiredPostalAddressPostProcessor.h; sourceTree = "<group>"; };
+		371E0D5F25369FC600665416 /* OHRequiredFieldPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6125369FC600665416 /* OHCompositeAndPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeAndPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6225369FC600665416 /* OHCompositeOrPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeOrPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6325369FC600665416 /* OHCompositeXorPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeXorPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6425369FC600665416 /* OHCompositeAndPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCompositeAndPostProcessor.h; sourceTree = "<group>"; };
+		371E0D6525369FC600665416 /* OHCompositeOrPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCompositeOrPostProcessor.h; sourceTree = "<group>"; };
+		371E0D6625369FC600665416 /* OHCompositeXorPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCompositeXorPostProcessor.h; sourceTree = "<group>"; };
+		371E0D6725369FC600665416 /* OHStatisticsPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHStatisticsPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6825369FC600665416 /* OHReverseOrderPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHReverseOrderPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6925369FC600665416 /* OHPhoneNumberFormattingPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHPhoneNumberFormattingPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6A25369FC600665416 /* OHSplitOnFieldTypePostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHSplitOnFieldTypePostProcessor.h; sourceTree = "<group>"; };
+		371E0D6B25369FC600665416 /* OHAlphabeticalSortPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHAlphabeticalSortPostProcessor.h; sourceTree = "<group>"; };
+		371E0D6C25369FC600665416 /* OHRequiredFieldPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHRequiredFieldPostProcessor.h; sourceTree = "<group>"; };
+		371E0D6D25369FC600665416 /* OHRequiredPostalAddressPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHRequiredPostalAddressPostProcessor.m; sourceTree = "<group>"; };
+		371E0D6F25369FC600665416 /* OHMinimumSelectedCountSelectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMinimumSelectedCountSelectionFilter.m; sourceTree = "<group>"; };
+		371E0D7025369FC600665416 /* OHRequiredFieldSelectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHRequiredFieldSelectionFilter.h; sourceTree = "<group>"; };
+		371E0D7125369FC600665416 /* OHMaximumSelectedCountSelectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHMaximumSelectedCountSelectionFilter.m; sourceTree = "<group>"; };
+		371E0D7225369FC600665416 /* OHMaximumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMaximumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
+		371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldSelectionFilter.m; sourceTree = "<group>"; };
+		371E0D7425369FC600665416 /* OHMinimumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMinimumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
+		371E0D7525369FC600665416 /* OhanaCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhanaCommon.h; sourceTree = "<group>"; };
+		371E0DD42536A46B00665416 /* UberSignals.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UberSignals.xcodeproj; path = "../../signals-ios/UberSignals.xcodeproj"; sourceTree = "<group>"; };
+		371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPhoneNumber.xcodeproj; path = "../../libPhoneNumber-iOS/libPhoneNumber.xcodeproj"; sourceTree = "<group>"; };
+		37C9E1D72536BFA8000E9655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3D0089C01D55798800D6863A /* NSOrderedSetMake+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSetMake+Internal.h"; sourceTree = "<group>"; };
 		3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeAndPostProcessorTests.m; sourceTree = "<group>"; };
 		3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeOrPostProcessorTests.m; sourceTree = "<group>"; };
@@ -112,13 +342,11 @@
 		6003F59D195388D20070C39A /* OHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHAppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* OhanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OhanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71EC68375279D3CE37FA943E /* Pods-OhanaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.release.xcconfig"; sourceTree = "<group>"; };
 		ACE7A581ACB5DE2E33615F85 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C86E366F278730BC29A5049F /* Pods_OhanaExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OhanaExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D28845244B7FAFC2B0357393 /* Pods-OhanaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OhanaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D76C9ACD3623918B06F69FA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DF25D9B4B58EA8865D06A2F6 /* Ohana.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Ohana.podspec; path = ../Ohana.podspec; sourceTree = "<group>"; };
@@ -126,14 +354,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		371E0D2C25369F9B00665416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371E0E6A2536A99200665416 /* libPhoneNumberiOS.framework in Frameworks */,
+				371E0DF52536A47A00665416 /* UberSignals.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
+				37C9E20F2536C35D000E9655 /* ohana.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				0147B9BD30C4A4CF28D2E37D /* Pods_OhanaExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,16 +378,170 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
+				37C9E20D2536C305000E9655 /* ohana.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				A504D3EA580FB3BB33B3F542 /* Pods_OhanaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		371E0D3025369F9B00665416 /* ohana */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D3125369F9C00665416 /* ohana.h */,
+				371E0D3225369F9C00665416 /* Info.plist */,
+			);
+			path = ohana;
+			sourceTree = "<group>";
+		};
+		371E0D3E25369FAB00665416 /* FrameworkClass */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D3F25369FC600665416 /* Classes */,
+			);
+			path = FrameworkClass;
+			sourceTree = "<group>";
+		};
+		371E0D3F25369FC600665416 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D4025369FC600665416 /* Core */,
+				371E0D4E25369FC600665416 /* Utilities */,
+				371E0D5225369FC600665416 /* Common */,
+			);
+			name = Classes;
+			path = ../../Ohana/Classes;
+			sourceTree = "<group>";
+		};
+		371E0D4025369FC600665416 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D4125369FC600665416 /* OHContactField.h */,
+				371E0D4225369FC600665416 /* OHContactsDataSource.m */,
+				371E0D4325369FC600665416 /* OHContact.m */,
+				371E0D4425369FC600665416 /* OhanaCore.h */,
+				371E0D4525369FC600665416 /* OHContactAddress.h */,
+				371E0D4625369FC600665416 /* OHContactsDataProviderProtocol.m */,
+				371E0D4725369FC600665416 /* OHContactsSelectionFilterProtocol.h */,
+				371E0D4825369FC600665416 /* OHContact.h */,
+				371E0D4925369FC600665416 /* OHContactsPostProcessorProtocol.h */,
+				371E0D4A25369FC600665416 /* OHContactsDataSource.h */,
+				371E0D4B25369FC600665416 /* OHContactField.m */,
+				371E0D4C25369FC600665416 /* OHContactAddress.m */,
+				371E0D4D25369FC600665416 /* OHContactsDataProviderProtocol.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		371E0D4E25369FC600665416 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D4F25369FC600665416 /* OHFuzzyMatchingUtility.h */,
+				371E0D5025369FC600665416 /* OHFuzzyMatchingUtility.m */,
+				371E0D5125369FC600665416 /* OhanaUtilities.h */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		371E0D5225369FC600665416 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D5325369FC600665416 /* DataProviders */,
+				371E0D5825369FC600665416 /* PostProcessors */,
+				371E0D6E25369FC600665416 /* SelectionFilters */,
+				371E0D7525369FC600665416 /* OhanaCommon.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		371E0D5325369FC600665416 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D5425369FC600665416 /* OHCNContactsDataProvider.m */,
+				371E0D5525369FC600665416 /* OHABAddressBookContactsDataProvider.h */,
+				371E0D5625369FC600665416 /* OHCNContactsDataProvider.h */,
+				371E0D5725369FC600665416 /* OHABAddressBookContactsDataProvider.m */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		371E0D5825369FC600665416 /* PostProcessors */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D5925369FC600665416 /* OHReverseOrderPostProcessor.h */,
+				371E0D5A25369FC600665416 /* OHStatisticsPostProcessor.h */,
+				371E0D5B25369FC600665416 /* OHSplitOnFieldTypePostProcessor.m */,
+				371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */,
+				371E0D5D25369FC600665416 /* OHAlphabeticalSortPostProcessor.m */,
+				371E0D5E25369FC600665416 /* OHRequiredPostalAddressPostProcessor.h */,
+				371E0D5F25369FC600665416 /* OHRequiredFieldPostProcessor.m */,
+				371E0D6025369FC600665416 /* Composite */,
+				371E0D6725369FC600665416 /* OHStatisticsPostProcessor.m */,
+				371E0D6825369FC600665416 /* OHReverseOrderPostProcessor.m */,
+				371E0D6925369FC600665416 /* OHPhoneNumberFormattingPostProcessor.m */,
+				371E0D6A25369FC600665416 /* OHSplitOnFieldTypePostProcessor.h */,
+				371E0D6B25369FC600665416 /* OHAlphabeticalSortPostProcessor.h */,
+				371E0D6C25369FC600665416 /* OHRequiredFieldPostProcessor.h */,
+				371E0D6D25369FC600665416 /* OHRequiredPostalAddressPostProcessor.m */,
+			);
+			path = PostProcessors;
+			sourceTree = "<group>";
+		};
+		371E0D6025369FC600665416 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D6125369FC600665416 /* OHCompositeAndPostProcessor.m */,
+				371E0D6225369FC600665416 /* OHCompositeOrPostProcessor.m */,
+				371E0D6325369FC600665416 /* OHCompositeXorPostProcessor.m */,
+				371E0D6425369FC600665416 /* OHCompositeAndPostProcessor.h */,
+				371E0D6525369FC600665416 /* OHCompositeOrPostProcessor.h */,
+				371E0D6625369FC600665416 /* OHCompositeXorPostProcessor.h */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		371E0D6E25369FC600665416 /* SelectionFilters */ = {
+			isa = PBXGroup;
+			children = (
+				371E0D6F25369FC600665416 /* OHMinimumSelectedCountSelectionFilter.m */,
+				371E0D7025369FC600665416 /* OHRequiredFieldSelectionFilter.h */,
+				371E0D7125369FC600665416 /* OHMaximumSelectedCountSelectionFilter.m */,
+				371E0D7225369FC600665416 /* OHMaximumSelectedCountSelectionFilter.h */,
+				371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */,
+				371E0D7425369FC600665416 /* OHMinimumSelectedCountSelectionFilter.h */,
+			);
+			path = SelectionFilters;
+			sourceTree = "<group>";
+		};
+		371E0DD52536A46B00665416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371E0DDF2536A46C00665416 /* UberSignals.framework */,
+				371E0DE12536A46C00665416 /* UberSignals.framework */,
+				371E0DE32536A46C00665416 /* UberSignals.framework */,
+				371E0DE52536A46C00665416 /* UberSignals.framework */,
+				371E0DE72536A46C00665416 /* UberSignalsTests.xctest */,
+				371E0DE92536A46C00665416 /* UberSignals OSX Tests.xctest */,
+				371E0DEB2536A46C00665416 /* UberSignals tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		371E0E512536A98500665416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */,
+				371E0E5C2536A98500665416 /* libPhoneNumberiOSTests.xctest */,
+				371E0E5E2536A98500665416 /* libPhoneNumberGeocoding.framework */,
+				371E0E602536A98500665416 /* libPhoneNumberGeocodingTests.xctest */,
+				371E0E622536A98500665416 /* libPhoneNumberShortNumber.framework */,
+				371E0E642536A98500665416 /* libPhoneNumberShortNumberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		3D1880CE1D5BCD64003F180A /* 02 - Basic Contact Photos Picker */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,9 +621,13 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */,
+				371E0DD42536A46B00665416 /* UberSignals.xcodeproj */,
+				371E0D3E25369FAB00665416 /* FrameworkClass */,
 				6003F593195388D20070C39A /* Example App */,
 				6003F5B5195388D20070C39A /* Tests */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
+				371E0D3025369F9B00665416 /* ohana */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				B2D91AB306DBA2FC2C6D1BAA /* Pods */,
@@ -244,6 +639,7 @@
 			children = (
 				6003F58A195388D20070C39A /* OhanaExample.app */,
 				6003F5AE195388D20070C39A /* OhanaTests.xctest */,
+				371E0D2F25369F9B00665416 /* ohana.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -252,11 +648,9 @@
 			isa = PBXGroup;
 			children = (
 				6003F58D195388D20070C39A /* Foundation.framework */,
+				37C9E1D72536BFA8000E9655 /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
-				6003F5AF195388D20070C39A /* XCTest.framework */,
-				C86E366F278730BC29A5049F /* Pods_OhanaExample.framework */,
-				070769B546BD01B9D04E1E1B /* Pods_OhanaTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -357,21 +751,76 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		371E0D2A25369F9B00665416 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371E0D3325369F9C00665416 /* ohana.h in Headers */,
+				37C9E2272536C62E000E9655 /* OHContactField.h in Headers */,
+				37C9E2282536C62E000E9655 /* OhanaCore.h in Headers */,
+				37C9E2292536C62E000E9655 /* OHContactAddress.h in Headers */,
+				37C9E22A2536C62E000E9655 /* OHContactsSelectionFilterProtocol.h in Headers */,
+				37C9E22B2536C62E000E9655 /* OHContact.h in Headers */,
+				37C9E22C2536C62E000E9655 /* OHContactsPostProcessorProtocol.h in Headers */,
+				37C9E22D2536C62E000E9655 /* OHContactsDataSource.h in Headers */,
+				37C9E22E2536C62E000E9655 /* OHContactsDataProviderProtocol.h in Headers */,
+				37C9E22F2536C62E000E9655 /* OHFuzzyMatchingUtility.h in Headers */,
+				37C9E2302536C62E000E9655 /* OhanaUtilities.h in Headers */,
+				37C9E2312536C62E000E9655 /* OHABAddressBookContactsDataProvider.h in Headers */,
+				37C9E2322536C62E000E9655 /* OHCNContactsDataProvider.h in Headers */,
+				37C9E2332536C62E000E9655 /* OHReverseOrderPostProcessor.h in Headers */,
+				37C9E2342536C62E000E9655 /* OHStatisticsPostProcessor.h in Headers */,
+				37C9E2352536C62E000E9655 /* OHPhoneNumberFormattingPostProcessor.h in Headers */,
+				37C9E2362536C62E000E9655 /* OHRequiredPostalAddressPostProcessor.h in Headers */,
+				37C9E2372536C62E000E9655 /* OHCompositeAndPostProcessor.h in Headers */,
+				37C9E2382536C62F000E9655 /* OHCompositeOrPostProcessor.h in Headers */,
+				37C9E2392536C62F000E9655 /* OHCompositeXorPostProcessor.h in Headers */,
+				37C9E23A2536C62F000E9655 /* OHSplitOnFieldTypePostProcessor.h in Headers */,
+				37C9E23B2536C62F000E9655 /* OHAlphabeticalSortPostProcessor.h in Headers */,
+				37C9E23C2536C62F000E9655 /* OHRequiredFieldPostProcessor.h in Headers */,
+				37C9E23D2536C62F000E9655 /* OHRequiredFieldSelectionFilter.h in Headers */,
+				37C9E23E2536C62F000E9655 /* OHMaximumSelectedCountSelectionFilter.h in Headers */,
+				37C9E23F2536C62F000E9655 /* OHMinimumSelectedCountSelectionFilter.h in Headers */,
+				37C9E2402536C62F000E9655 /* OhanaCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* OhanaExample */ = {
+		371E0D2E25369F9B00665416 /* ohana */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "OhanaExample" */;
+			buildConfigurationList = 371E0D3925369F9C00665416 /* Build configuration list for PBXNativeTarget "ohana" */;
 			buildPhases = (
-				46C2B4165DEDE974843C796B /* [CP] Check Pods Manifest.lock */,
-				6003F586195388D20070C39A /* Sources */,
-				6003F587195388D20070C39A /* Frameworks */,
-				6003F588195388D20070C39A /* Resources */,
-				AF1AAFAA8907FEDD6005967A /* [CP] Embed Pods Frameworks */,
-				C21791BBB367E85F303FEDE2 /* [CP] Copy Pods Resources */,
+				371E0D2A25369F9B00665416 /* Headers */,
+				371E0D2B25369F9B00665416 /* Sources */,
+				371E0D2C25369F9B00665416 /* Frameworks */,
+				371E0D2D25369F9B00665416 /* Resources */,
+				371E0DF72536A47B00665416 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = ohana;
+			productName = ohana;
+			productReference = 371E0D2F25369F9B00665416 /* ohana.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6003F589195388D20070C39A /* OhanaExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "OhanaExample" */;
+			buildPhases = (
+				6003F586195388D20070C39A /* Sources */,
+				6003F587195388D20070C39A /* Frameworks */,
+				6003F588195388D20070C39A /* Resources */,
+				37C9E2132536C35E000E9655 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37C9E2162536C39E000E9655 /* PBXTargetDependency */,
 			);
 			name = OhanaExample;
 			productName = Ohana;
@@ -382,12 +831,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "OhanaTests" */;
 			buildPhases = (
-				AE25F07C1393C19CA4E668FD /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				4682BA6A4F568737D9457FAB /* [CP] Embed Pods Frameworks */,
-				A45A893824C3155A483CDF3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,9 +853,13 @@
 			attributes = {
 				CLASSPREFIX = OH;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Nick Entin";
 				TargetAttributes = {
+					371E0D2E25369F9B00665416 = {
+						CreatedOnToolsVersion = 12.0.1;
+						ProvisioningStyle = Automatic;
+					};
 					6003F589195388D20070C39A = {
 						LastSwiftMigration = 0800;
 					};
@@ -420,7 +870,7 @@
 			};
 			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "Ohana" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -429,15 +879,127 @@
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 371E0E512536A98500665416 /* Products */;
+					ProjectRef = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
+				},
+				{
+					ProductGroup = 371E0DD52536A46B00665416 /* Products */;
+					ProjectRef = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* OhanaExample */,
 				6003F5AD195388D20070C39A /* OhanaTests */,
+				371E0D2E25369F9B00665416 /* ohana */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		371E0DDF2536A46C00665416 /* UberSignals.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UberSignals.framework;
+			remoteRef = 371E0DDE2536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0DE12536A46C00665416 /* UberSignals.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UberSignals.framework;
+			remoteRef = 371E0DE02536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0DE32536A46C00665416 /* UberSignals.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UberSignals.framework;
+			remoteRef = 371E0DE22536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0DE52536A46C00665416 /* UberSignals.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UberSignals.framework;
+			remoteRef = 371E0DE42536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0DE72536A46C00665416 /* UberSignalsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UberSignalsTests.xctest;
+			remoteRef = 371E0DE62536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0DE92536A46C00665416 /* UberSignals OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UberSignals OSX Tests.xctest";
+			remoteRef = 371E0DE82536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0DEB2536A46C00665416 /* UberSignals tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "UberSignals tvOS Tests.xctest";
+			remoteRef = 371E0DEA2536A46C00665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libPhoneNumberiOS.framework;
+			remoteRef = 371E0E592536A98500665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0E5C2536A98500665416 /* libPhoneNumberiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libPhoneNumberiOSTests.xctest;
+			remoteRef = 371E0E5B2536A98500665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0E5E2536A98500665416 /* libPhoneNumberGeocoding.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libPhoneNumberGeocoding.framework;
+			remoteRef = 371E0E5D2536A98500665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0E602536A98500665416 /* libPhoneNumberGeocodingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libPhoneNumberGeocodingTests.xctest;
+			remoteRef = 371E0E5F2536A98500665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0E622536A98500665416 /* libPhoneNumberShortNumber.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libPhoneNumberShortNumber.framework;
+			remoteRef = 371E0E612536A98500665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		371E0E642536A98500665416 /* libPhoneNumberShortNumberTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libPhoneNumberShortNumberTests.xctest;
+			remoteRef = 371E0E632536A98500665416 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
+		371E0D2D25369F9B00665416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F588195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -458,116 +1020,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		4682BA6A4F568737D9457FAB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		46C2B4165DEDE974843C796B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A45A893824C3155A483CDF3E /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaTests/Pods-OhanaTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AE25F07C1393C19CA4E668FD /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		AF1AAFAA8907FEDD6005967A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C21791BBB367E85F303FEDE2 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OhanaExample/Pods-OhanaExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
+		371E0D2B25369F9B00665416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371E0E702536ABF900665416 /* OHPhoneNumberFormattingPostProcessor.h in Sources */,
+				371E0D8E25369FE900665416 /* OHContactsDataSource.m in Sources */,
+				371E0D8F25369FE900665416 /* OHContact.m in Sources */,
+				371E0D9025369FE900665416 /* OHContactsDataProviderProtocol.m in Sources */,
+				371E0D9125369FE900665416 /* OHContactField.m in Sources */,
+				371E0D9225369FE900665416 /* OHContactAddress.m in Sources */,
+				371E0D9325369FE900665416 /* OHFuzzyMatchingUtility.m in Sources */,
+				371E0D9425369FE900665416 /* OHCNContactsDataProvider.m in Sources */,
+				371E0D9525369FE900665416 /* OHABAddressBookContactsDataProvider.m in Sources */,
+				371E0D9625369FE900665416 /* OHSplitOnFieldTypePostProcessor.m in Sources */,
+				371E0D9725369FE900665416 /* OHAlphabeticalSortPostProcessor.m in Sources */,
+				371E0D9825369FE900665416 /* OHRequiredFieldPostProcessor.m in Sources */,
+				371E0D9925369FE900665416 /* OHCompositeAndPostProcessor.m in Sources */,
+				371E0D9A25369FE900665416 /* OHCompositeOrPostProcessor.m in Sources */,
+				371E0D9B25369FE900665416 /* OHCompositeXorPostProcessor.m in Sources */,
+				371E0D9C25369FE900665416 /* OHStatisticsPostProcessor.m in Sources */,
+				371E0D9D25369FE900665416 /* OHReverseOrderPostProcessor.m in Sources */,
+				371E0D9E25369FE900665416 /* OHPhoneNumberFormattingPostProcessor.m in Sources */,
+				371E0D9F25369FE900665416 /* OHRequiredPostalAddressPostProcessor.m in Sources */,
+				371E0DA025369FE900665416 /* OHMinimumSelectedCountSelectionFilter.m in Sources */,
+				371E0DA125369FE900665416 /* OHMaximumSelectedCountSelectionFilter.m in Sources */,
+				371E0DA225369FE900665416 /* OHRequiredFieldSelectionFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA758EB1D5AC15300CA601F /* OHPhoneOrEmailPicker.swift in Sources */,
-				3D8E42B11D58F87F009780F0 /* OHContactSelectionTableViewController.m in Sources */,
-				3D1880CD1D5BCD58003F180A /* OHBasicContactPhotosPicker.swift in Sources */,
-				3D8E42AE1D58F4AB009780F0 /* OHPhoneNumberPickerTableViewController.m in Sources */,
-				3D8E42A01D5716CE009780F0 /* OHExampleListTableViewController.m in Sources */,
-				3DA758ED1D5B23D800CA601F /* OHStatisticsExample.swift in Sources */,
-				3DE7FC091D59C57C001F427C /* OHFuzzySearchTableViewController.m in Sources */,
-				3DDA91351D5B9BF70034644A /* OHSMSPicker.swift in Sources */,
-				3DDA91391D5BC3F90034644A /* OHMaximumSelectedCountPicker.swift in Sources */,
-				6003F59E195388D20070C39A /* OHAppDelegate.m in Sources */,
-				3D8E42A71D571B6C009780F0 /* OHBasicContactPickerTableViewController.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
+				37C9E2462536C833000E9655 /* OHBasicContactPhotosPicker.swift in Sources */,
+				37C9E2472536C833000E9655 /* OHPhoneOrEmailPicker.swift in Sources */,
+				37C9E2482536C833000E9655 /* OHStatisticsExample.swift in Sources */,
+				37C9E2492536C833000E9655 /* OHSMSPicker.swift in Sources */,
+				37C9E24A2536C833000E9655 /* OHMaximumSelectedCountPicker.swift in Sources */,
+				37C9E2212536C468000E9655 /* OhanaExample-Bridging-Header.h in Sources */,
+				37C9E2192536C3E8000E9655 /* OHAppDelegate.m in Sources */,
+				37C9E21A2536C3E8000E9655 /* OHExampleListTableViewController.m in Sources */,
+				37C9E21B2536C3E8000E9655 /* OHBasicContactPickerTableViewController.m in Sources */,
+				37C9E21C2536C3E8000E9655 /* OHPhoneNumberPickerTableViewController.m in Sources */,
+				37C9E21D2536C3E8000E9655 /* OHContactSelectionTableViewController.m in Sources */,
+				37C9E21E2536C3E8000E9655 /* OHFuzzySearchTableViewController.m in Sources */,
+				37C9E21F2536C3E8000E9655 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +1098,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		37C9E2162536C39E000E9655 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 371E0D2E25369F9B00665416 /* ohana */;
+			targetProxy = 37C9E2152536C39E000E9655 /* PBXContainerItemProxy */;
+		};
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* OhanaExample */;
@@ -626,27 +1130,131 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		371E0D3A25369F9C00665416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q82Y7SG79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ohana/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ohana.ohana;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		371E0D3B25369F9C00665416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Q82Y7SG79;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = ohana/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = ohana.ohana;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -659,7 +1267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -670,30 +1278,46 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -708,14 +1332,18 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ohana/Ohana-Prefix.pch";
 				INFOPLIST_FILE = "Ohana/Ohana-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uber.ohana.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ohana/OhanaExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -729,13 +1357,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ohana/Ohana-Prefix.pch";
 				INFOPLIST_FILE = "Ohana/Ohana-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uber.ohana.ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Ohana/OhanaExample-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -744,7 +1376,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D28845244B7FAFC2B0357393 /* Pods-OhanaTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 7Q82Y7SG79;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -768,7 +1403,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 71EC68375279D3CE37FA943E /* Pods-OhanaTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = 7Q82Y7SG79;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -787,6 +1425,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		371E0D3925369F9C00665416 /* Build configuration list for PBXNativeTarget "ohana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				371E0D3A25369F9C00665416 /* Debug */,
+				371E0D3B25369F9C00665416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "Ohana" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

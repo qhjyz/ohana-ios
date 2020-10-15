@@ -35,7 +35,7 @@ To consume Ohana using [Carthage](https://github.com/Carthage/Carthage) add this
 github "uber/ohana-ios" ~> 1.3
 ```
 
-You'll need to manually import Ohana, and its dependencies, libPhoneNumber and UberSignals.
+You'll need to manually import ohana, and its dependencies, libPhoneNumber and UberSignals.
 
 ## Running the Examples App
 

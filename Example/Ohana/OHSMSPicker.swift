@@ -25,7 +25,7 @@
 
 import UIKit
 import MessageUI
-import Ohana
+import ohana
 
 
 class OHSMSPicker: UITableViewController, OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate, MFMessageComposeViewControllerDelegate {

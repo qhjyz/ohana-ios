@@ -23,14 +23,9 @@
 //  THE SOFTWARE.
 //
 
+//@import libPhoneNubmeriOS;
 #import "OHPhoneNumberFormattingPostProcessor.h"
-
-// This imports libPhoneNumber-iOS if using libraries
-#if __has_include(<libPhoneNumber-iOS/NBPhoneNumberUtil.h>)
-#import <libPhoneNumber-iOS/NBPhoneNumberUtil.h>
-#elif __has_include(<libPhoneNumber_iOS/NBPhoneNumberUtil.h>)
-#import <libPhoneNumber_iOS/NBPhoneNumberUtil.h>
-#endif
+@import libPhoneNumberiOS;
 
 @interface OHPhoneNumberFormattingPostProcessor ()
 

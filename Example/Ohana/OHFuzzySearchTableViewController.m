@@ -25,7 +25,7 @@
 
 #import "OHFuzzySearchTableViewController.h"
 
-#import <Ohana/Ohana.h>
+@import ohana;
 
 @interface OHFuzzySearchTableViewController () <OHCNContactsDataProviderDelegate, OHABAddressBookContactsDataProviderDelegate, UISearchResultsUpdating>
 

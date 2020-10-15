@@ -22,8 +22,8 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 //
-
-#import <UberSignals/UberSignals.h>
+@import Foundation;
+@import UberSignals;
 
 #import "OHContact.h"
 
