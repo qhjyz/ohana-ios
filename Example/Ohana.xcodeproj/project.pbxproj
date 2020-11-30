@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -29,11 +29,8 @@
 		371E0DA025369FE900665416 /* OHMinimumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6F25369FC600665416 /* OHMinimumSelectedCountSelectionFilter.m */; };
 		371E0DA125369FE900665416 /* OHMaximumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7125369FC600665416 /* OHMaximumSelectedCountSelectionFilter.m */; };
 		371E0DA225369FE900665416 /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */; };
-		371E0DF52536A47A00665416 /* UberSignals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0DDF2536A46C00665416 /* UberSignals.framework */; };
-		371E0DF62536A47A00665416 /* UberSignals.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0DDF2536A46C00665416 /* UberSignals.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		371E0E6A2536A99200665416 /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */; platformFilter = ios; };
-		371E0E6B2536A99200665416 /* libPhoneNumberiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		371E0E702536ABF900665416 /* OHPhoneNumberFormattingPostProcessor.h in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */; };
+		376F61A72574A0AA00E8BC70 /* UberSignals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D752C0257490780004CD94 /* UberSignals.framework */; };
 		37C9E20D2536C305000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
 		37C9E20F2536C35D000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
 		37C9E2102536C35D000E9655 /* ohana.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -106,103 +103,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		371E0DDE2536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 72FED2061B2C97C400DCAB7E;
-			remoteInfo = "UberSignals iOS";
-		};
-		371E0DE02536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5EBEBDAF1C162DE000E8CA02;
-			remoteInfo = "UberSignals OSX";
-		};
-		371E0DE22536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7249931B1C41DFFE006653CB;
-			remoteInfo = "UberSignals tvOS";
-		};
-		371E0DE42536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 724993371C41E021006653CB;
-			remoteInfo = "UberSignals watchOS";
-		};
-		371E0DE62536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 72FED2111B2C97C400DCAB7E;
-			remoteInfo = "UberSignals iOS Tests";
-		};
-		371E0DE82536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B643B47C1C1EE50D00BE2A3B;
-			remoteInfo = "UberSignals OSX Tests";
-		};
-		371E0DEA2536A46C00665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 724993241C41DFFE006653CB;
-			remoteInfo = "UberSignals tvOS Tests";
-		};
-		371E0E592536A98500665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 34ACBB851B7122AC0064B3BD;
-			remoteInfo = libPhoneNumberiOS;
-		};
-		371E0E5B2536A98500665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 14B7A2931DE9B65D0051AED7;
-			remoteInfo = libPhoneNumberiOSTests;
-		};
-		371E0E5D2536A98500665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0FC0D36424A29F510087AFCF;
-			remoteInfo = libPhoneNumberGeocoding;
-		};
-		371E0E5F2536A98500665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0FC0D37624A2A05E0087AFCF;
-			remoteInfo = libPhoneNumberGeocodingTests;
-		};
-		371E0E612536A98500665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9407258B24BE768A0011AE05;
-			remoteInfo = libPhoneNumberShortNumber;
-		};
-		371E0E632536A98500665416 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9407259324BE768A0011AE05;
-			remoteInfo = libPhoneNumberShortNumberTests;
-		};
 		37C9E2152536C39E000E9655 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 371E0D2E25369F9B00665416;
 			remoteInfo = ohana;
+		};
+		37D752BF257490780004CD94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37D752BB257490770004CD94 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 72FED2061B2C97C400DCAB7E;
+			remoteInfo = "UberSignals iOS";
 		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -214,18 +127,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		371E0DF72536A47B00665416 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				371E0E6B2536A99200665416 /* libPhoneNumberiOS.framework in Embed Frameworks */,
-				371E0DF62536A47A00665416 /* UberSignals.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		37C9E2132536C35E000E9655 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,9 +192,8 @@
 		371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldSelectionFilter.m; sourceTree = "<group>"; };
 		371E0D7425369FC600665416 /* OHMinimumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMinimumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
 		371E0D7525369FC600665416 /* OhanaCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhanaCommon.h; sourceTree = "<group>"; };
-		371E0DD42536A46B00665416 /* UberSignals.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UberSignals.xcodeproj; path = "../../signals-ios/UberSignals.xcodeproj"; sourceTree = "<group>"; };
-		371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPhoneNumber.xcodeproj; path = "../../libPhoneNumber-iOS/libPhoneNumber.xcodeproj"; sourceTree = "<group>"; };
 		37C9E1D72536BFA8000E9655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		37D752BB257490770004CD94 /* UberSignals.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UberSignals.xcodeproj; path = "../../signals-ios/UberSignals.xcodeproj"; sourceTree = "<group>"; };
 		3D0089C01D55798800D6863A /* NSOrderedSetMake+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSetMake+Internal.h"; sourceTree = "<group>"; };
 		3D0089C51D56E55B00D6863A /* OHCompositeAndPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeAndPostProcessorTests.m; sourceTree = "<group>"; };
 		3D0089CB1D56EA4400D6863A /* OHCompositeOrPostProcessorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHCompositeOrPostProcessorTests.m; sourceTree = "<group>"; };
@@ -358,8 +258,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				371E0E6A2536A99200665416 /* libPhoneNumberiOS.framework in Frameworks */,
-				371E0DF52536A47A00665416 /* UberSignals.framework in Frameworks */,
+				376F61A72574A0AA00E8BC70 /* UberSignals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,29 +414,10 @@
 			path = SelectionFilters;
 			sourceTree = "<group>";
 		};
-		371E0DD52536A46B00665416 /* Products */ = {
+		37D752BC257490770004CD94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				371E0DDF2536A46C00665416 /* UberSignals.framework */,
-				371E0DE12536A46C00665416 /* UberSignals.framework */,
-				371E0DE32536A46C00665416 /* UberSignals.framework */,
-				371E0DE52536A46C00665416 /* UberSignals.framework */,
-				371E0DE72536A46C00665416 /* UberSignalsTests.xctest */,
-				371E0DE92536A46C00665416 /* UberSignals OSX Tests.xctest */,
-				371E0DEB2536A46C00665416 /* UberSignals tvOS Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		371E0E512536A98500665416 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */,
-				371E0E5C2536A98500665416 /* libPhoneNumberiOSTests.xctest */,
-				371E0E5E2536A98500665416 /* libPhoneNumberGeocoding.framework */,
-				371E0E602536A98500665416 /* libPhoneNumberGeocodingTests.xctest */,
-				371E0E622536A98500665416 /* libPhoneNumberShortNumber.framework */,
-				371E0E642536A98500665416 /* libPhoneNumberShortNumberTests.xctest */,
+				37D752C0257490780004CD94 /* UberSignals.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -621,8 +501,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */,
-				371E0DD42536A46B00665416 /* UberSignals.xcodeproj */,
+				37D752BB257490770004CD94 /* UberSignals.xcodeproj */,
 				371E0D3E25369FAB00665416 /* FrameworkClass */,
 				6003F593195388D20070C39A /* Example App */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -797,7 +676,6 @@
 				371E0D2B25369F9B00665416 /* Sources */,
 				371E0D2C25369F9B00665416 /* Frameworks */,
 				371E0D2D25369F9B00665416 /* Resources */,
-				371E0DF72536A47B00665416 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -853,17 +731,19 @@
 			attributes = {
 				CLASSPREFIX = OH;
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Nick Entin";
 				TargetAttributes = {
 					371E0D2E25369F9B00665416 = {
 						CreatedOnToolsVersion = 12.0.1;
+						DevelopmentTeam = 7Q82Y7SG79;
 						ProvisioningStyle = Automatic;
 					};
 					6003F589195388D20070C39A = {
 						LastSwiftMigration = 0800;
 					};
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = 7Q82Y7SG79;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -881,12 +761,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 371E0E512536A98500665416 /* Products */;
-					ProjectRef = 371E0E502536A98500665416 /* libPhoneNumber.xcodeproj */;
-				},
-				{
-					ProductGroup = 371E0DD52536A46B00665416 /* Products */;
-					ProjectRef = 371E0DD42536A46B00665416 /* UberSignals.xcodeproj */;
+					ProductGroup = 37D752BC257490770004CD94 /* Products */;
+					ProjectRef = 37D752BB257490770004CD94 /* UberSignals.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -899,95 +775,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		371E0DDF2536A46C00665416 /* UberSignals.framework */ = {
+		37D752C0257490780004CD94 /* UberSignals.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = UberSignals.framework;
-			remoteRef = 371E0DDE2536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0DE12536A46C00665416 /* UberSignals.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UberSignals.framework;
-			remoteRef = 371E0DE02536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0DE32536A46C00665416 /* UberSignals.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UberSignals.framework;
-			remoteRef = 371E0DE22536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0DE52536A46C00665416 /* UberSignals.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UberSignals.framework;
-			remoteRef = 371E0DE42536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0DE72536A46C00665416 /* UberSignalsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UberSignalsTests.xctest;
-			remoteRef = 371E0DE62536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0DE92536A46C00665416 /* UberSignals OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UberSignals OSX Tests.xctest";
-			remoteRef = 371E0DE82536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0DEB2536A46C00665416 /* UberSignals tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UberSignals tvOS Tests.xctest";
-			remoteRef = 371E0DEA2536A46C00665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0E5A2536A98500665416 /* libPhoneNumberiOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = libPhoneNumberiOS.framework;
-			remoteRef = 371E0E592536A98500665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0E5C2536A98500665416 /* libPhoneNumberiOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = libPhoneNumberiOSTests.xctest;
-			remoteRef = 371E0E5B2536A98500665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0E5E2536A98500665416 /* libPhoneNumberGeocoding.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = libPhoneNumberGeocoding.framework;
-			remoteRef = 371E0E5D2536A98500665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0E602536A98500665416 /* libPhoneNumberGeocodingTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = libPhoneNumberGeocodingTests.xctest;
-			remoteRef = 371E0E5F2536A98500665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0E622536A98500665416 /* libPhoneNumberShortNumber.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = libPhoneNumberShortNumber.framework;
-			remoteRef = 371E0E612536A98500665416 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		371E0E642536A98500665416 /* libPhoneNumberShortNumberTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = libPhoneNumberShortNumberTests.xctest;
-			remoteRef = 371E0E632536A98500665416 /* PBXContainerItemProxy */;
+			remoteRef = 37D752BF257490780004CD94 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -1141,7 +933,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -1152,20 +944,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ohana/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = ohana.ohana;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = libs.ohana;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1185,7 +974,7 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1197,20 +986,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ohana/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = ohana.ohana;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = libs.ohana;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1333,10 +1119,7 @@
 				GCC_PREFIX_HEADER = "Ohana/Ohana-Prefix.pch";
 				INFOPLIST_FILE = "Ohana/Ohana-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uber.ohana.ExampleApp;
@@ -1358,10 +1141,7 @@
 				GCC_PREFIX_HEADER = "Ohana/Ohana-Prefix.pch";
 				INFOPLIST_FILE = "Ohana/Ohana-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uber.ohana.ExampleApp;
