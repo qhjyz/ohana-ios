@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,12 @@
 		371E0DA225369FE900665416 /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */; };
 		371E0E702536ABF900665416 /* OHPhoneNumberFormattingPostProcessor.h in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */; };
 		376F61A72574A0AA00E8BC70 /* UberSignals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D752C0257490780004CD94 /* UberSignals.framework */; };
+		3785B476257DD70400B01656 /* NBNPhotoChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B475257DD70400B01656 /* NBNPhotoChooser.framework */; };
+		3785B49A257DD83500B01656 /* NBNPhotoChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */; };
+		3785B49B257DD83500B01656 /* NBNPhotoChooser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3785B4B3257DD85600B01656 /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; platformFilter = ios; };
+		3785B4BC257DD86200B01656 /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; };
+		3785B4BD257DD86200B01656 /* libPhoneNumberiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37C9E20D2536C305000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
 		37C9E20F2536C35D000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
 		37C9E2102536C35D000E9655 /* ohana.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -103,6 +109,69 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3785B48F257DD81A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0B1DDED1854829900908909;
+			remoteInfo = CameraPreview;
+		};
+		3785B491257DD81A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0B1DE081854829900908909;
+			remoteInfo = CameraPreviewTests;
+		};
+		3785B493257DD81A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37B0F572253544130075710A;
+			remoteInfo = NBNPhotoChooser;
+		};
+		3785B4A7257DD84A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34ACBB851B7122AC0064B3BD;
+			remoteInfo = libPhoneNumberiOS;
+		};
+		3785B4A9257DD84A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 14B7A2931DE9B65D0051AED7;
+			remoteInfo = libPhoneNumberiOSTests;
+		};
+		3785B4AB257DD84A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0FC0D36424A29F510087AFCF;
+			remoteInfo = libPhoneNumberGeocoding;
+		};
+		3785B4AD257DD84A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0FC0D37624A2A05E0087AFCF;
+			remoteInfo = libPhoneNumberGeocodingTests;
+		};
+		3785B4AF257DD84A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9407258B24BE768A0011AE05;
+			remoteInfo = libPhoneNumberShortNumber;
+		};
+		3785B4B1257DD84A00B01656 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9407259324BE768A0011AE05;
+			remoteInfo = libPhoneNumberShortNumberTests;
+		};
 		37C9E2152536C39E000E9655 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -133,6 +202,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				3785B4BD257DD86200B01656 /* libPhoneNumberiOS.framework in Embed Frameworks */,
+				3785B49B257DD83500B01656 /* NBNPhotoChooser.framework in Embed Frameworks */,
 				37C9E2102536C35D000E9655 /* ohana.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -192,6 +263,9 @@
 		371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldSelectionFilter.m; sourceTree = "<group>"; };
 		371E0D7425369FC600665416 /* OHMinimumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMinimumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
 		371E0D7525369FC600665416 /* OhanaCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhanaCommon.h; sourceTree = "<group>"; };
+		3785B475257DD70400B01656 /* NBNPhotoChooser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NBNPhotoChooser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CameraPreview.xcodeproj; path = ../../NBNPhotoChooser/Example/CameraPreview.xcodeproj; sourceTree = "<group>"; };
+		3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPhoneNumber.xcodeproj; path = "../../libPhoneNumber-iOS/libPhoneNumber.xcodeproj"; sourceTree = "<group>"; };
 		37C9E1D72536BFA8000E9655 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D752BB257490770004CD94 /* UberSignals.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UberSignals.xcodeproj; path = "../../signals-ios/UberSignals.xcodeproj"; sourceTree = "<group>"; };
 		3D0089C01D55798800D6863A /* NSOrderedSetMake+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSOrderedSetMake+Internal.h"; sourceTree = "<group>"; };
@@ -258,6 +332,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3785B4B3257DD85600B01656 /* libPhoneNumberiOS.framework in Frameworks */,
+				3785B476257DD70400B01656 /* NBNPhotoChooser.framework in Frameworks */,
 				376F61A72574A0AA00E8BC70 /* UberSignals.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,10 +342,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3785B4BC257DD86200B01656 /* libPhoneNumberiOS.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				37C9E20F2536C35D000E9655 /* ohana.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
+				3785B49A257DD83500B01656 /* NBNPhotoChooser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +492,29 @@
 			path = SelectionFilters;
 			sourceTree = "<group>";
 		};
+		3785B48A257DD81A00B01656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3785B490257DD81A00B01656 /* CameraPreview.app */,
+				3785B492257DD81A00B01656 /* CameraPreviewTests.xctest */,
+				3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3785B49F257DD84A00B01656 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */,
+				3785B4AA257DD84A00B01656 /* libPhoneNumberiOSTests.xctest */,
+				3785B4AC257DD84A00B01656 /* libPhoneNumberGeocoding.framework */,
+				3785B4AE257DD84A00B01656 /* libPhoneNumberGeocodingTests.xctest */,
+				3785B4B0257DD84A00B01656 /* libPhoneNumberShortNumber.framework */,
+				3785B4B2257DD84A00B01656 /* libPhoneNumberShortNumberTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		37D752BC257490770004CD94 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +602,8 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */,
+				3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */,
 				37D752BB257490770004CD94 /* UberSignals.xcodeproj */,
 				371E0D3E25369FAB00665416 /* FrameworkClass */,
 				6003F593195388D20070C39A /* Example App */,
@@ -526,6 +629,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3785B475257DD70400B01656 /* NBNPhotoChooser.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				37C9E1D72536BFA8000E9655 /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
@@ -761,6 +865,14 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = 3785B48A257DD81A00B01656 /* Products */;
+					ProjectRef = 3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */;
+				},
+				{
+					ProductGroup = 3785B49F257DD84A00B01656 /* Products */;
+					ProjectRef = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+				},
+				{
 					ProductGroup = 37D752BC257490770004CD94 /* Products */;
 					ProjectRef = 37D752BB257490770004CD94 /* UberSignals.xcodeproj */;
 				},
@@ -775,6 +887,69 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		3785B490257DD81A00B01656 /* CameraPreview.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = CameraPreview.app;
+			remoteRef = 3785B48F257DD81A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B492257DD81A00B01656 /* CameraPreviewTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CameraPreviewTests.xctest;
+			remoteRef = 3785B491257DD81A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = NBNPhotoChooser.framework;
+			remoteRef = 3785B493257DD81A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libPhoneNumberiOS.framework;
+			remoteRef = 3785B4A7257DD84A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B4AA257DD84A00B01656 /* libPhoneNumberiOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libPhoneNumberiOSTests.xctest;
+			remoteRef = 3785B4A9257DD84A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B4AC257DD84A00B01656 /* libPhoneNumberGeocoding.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libPhoneNumberGeocoding.framework;
+			remoteRef = 3785B4AB257DD84A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B4AE257DD84A00B01656 /* libPhoneNumberGeocodingTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libPhoneNumberGeocodingTests.xctest;
+			remoteRef = 3785B4AD257DD84A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B4B0257DD84A00B01656 /* libPhoneNumberShortNumber.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = libPhoneNumberShortNumber.framework;
+			remoteRef = 3785B4AF257DD84A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3785B4B2257DD84A00B01656 /* libPhoneNumberShortNumberTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = libPhoneNumberShortNumberTests.xctest;
+			remoteRef = 3785B4B1257DD84A00B01656 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		37D752C0257490780004CD94 /* UberSignals.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -949,7 +1124,11 @@
 				INFOPLIST_FILE = ohana/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -991,7 +1170,11 @@
 				INFOPLIST_FILE = ohana/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1119,7 +1302,10 @@
 				GCC_PREFIX_HEADER = "Ohana/Ohana-Prefix.pch";
 				INFOPLIST_FILE = "Ohana/Ohana-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uber.ohana.ExampleApp;
@@ -1141,7 +1327,10 @@
 				GCC_PREFIX_HEADER = "Ohana/Ohana-Prefix.pch";
 				INFOPLIST_FILE = "Ohana/Ohana-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.uber.ohana.ExampleApp;
