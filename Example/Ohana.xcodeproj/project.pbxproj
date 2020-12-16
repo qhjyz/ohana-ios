@@ -30,11 +30,34 @@
 		371E0DA125369FE900665416 /* OHMaximumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7125369FC600665416 /* OHMaximumSelectedCountSelectionFilter.m */; };
 		371E0DA225369FE900665416 /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */; };
 		371E0E702536ABF900665416 /* OHPhoneNumberFormattingPostProcessor.h in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5C25369FC600665416 /* OHPhoneNumberFormattingPostProcessor.h */; };
-		376F61A72574A0AA00E8BC70 /* UberSignals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D752C0257490780004CD94 /* UberSignals.framework */; };
-		3785B476257DD70400B01656 /* NBNPhotoChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B475257DD70400B01656 /* NBNPhotoChooser.framework */; };
+		372113A72585F68900340BCD /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; platformFilter = ios; };
+		372113BA2585F68E00340BCD /* UberSignals.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D752C0257490780004CD94 /* UberSignals.framework */; platformFilter = ios; };
+		372113C22585F73A00340BCD /* NBNPhotoChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */; };
+		37761C5C2585D570009CD206 /* libohana.m in Sources */ = {isa = PBXBuildFile; fileRef = 37761C5B2585D570009CD206 /* libohana.m */; };
+		37761C5D2585D570009CD206 /* libohana.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37761C5A2585D570009CD206 /* libohana.h */; };
+		37761C6E2585D587009CD206 /* OHContactsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4225369FC600665416 /* OHContactsDataSource.m */; };
+		37761C6F2585D587009CD206 /* OHContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4325369FC600665416 /* OHContact.m */; };
+		37761C702585D587009CD206 /* OHContactsDataProviderProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4625369FC600665416 /* OHContactsDataProviderProtocol.m */; };
+		37761C712585D587009CD206 /* OHContactField.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4B25369FC600665416 /* OHContactField.m */; };
+		37761C722585D587009CD206 /* OHContactAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D4C25369FC600665416 /* OHContactAddress.m */; };
+		37761C732585D587009CD206 /* OHFuzzyMatchingUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5025369FC600665416 /* OHFuzzyMatchingUtility.m */; };
+		37761C742585D587009CD206 /* OHCNContactsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5425369FC600665416 /* OHCNContactsDataProvider.m */; };
+		37761C752585D587009CD206 /* OHABAddressBookContactsDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5725369FC600665416 /* OHABAddressBookContactsDataProvider.m */; };
+		37761C762585D587009CD206 /* OHSplitOnFieldTypePostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5B25369FC600665416 /* OHSplitOnFieldTypePostProcessor.m */; };
+		37761C772585D587009CD206 /* OHAlphabeticalSortPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5D25369FC600665416 /* OHAlphabeticalSortPostProcessor.m */; };
+		37761C782585D587009CD206 /* OHRequiredFieldPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D5F25369FC600665416 /* OHRequiredFieldPostProcessor.m */; };
+		37761C792585D587009CD206 /* OHCompositeAndPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6125369FC600665416 /* OHCompositeAndPostProcessor.m */; };
+		37761C7A2585D588009CD206 /* OHCompositeOrPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6225369FC600665416 /* OHCompositeOrPostProcessor.m */; };
+		37761C7B2585D588009CD206 /* OHCompositeXorPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6325369FC600665416 /* OHCompositeXorPostProcessor.m */; };
+		37761C7C2585D588009CD206 /* OHStatisticsPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6725369FC600665416 /* OHStatisticsPostProcessor.m */; };
+		37761C7D2585D588009CD206 /* OHReverseOrderPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6825369FC600665416 /* OHReverseOrderPostProcessor.m */; };
+		37761C7E2585D588009CD206 /* OHPhoneNumberFormattingPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6925369FC600665416 /* OHPhoneNumberFormattingPostProcessor.m */; };
+		37761C7F2585D588009CD206 /* OHRequiredPostalAddressPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6D25369FC600665416 /* OHRequiredPostalAddressPostProcessor.m */; };
+		37761C802585D588009CD206 /* OHMinimumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D6F25369FC600665416 /* OHMinimumSelectedCountSelectionFilter.m */; };
+		37761C812585D588009CD206 /* OHMaximumSelectedCountSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7125369FC600665416 /* OHMaximumSelectedCountSelectionFilter.m */; };
+		37761C822585D588009CD206 /* OHRequiredFieldSelectionFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */; };
 		3785B49A257DD83500B01656 /* NBNPhotoChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */; };
 		3785B49B257DD83500B01656 /* NBNPhotoChooser.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B494257DD81A00B01656 /* NBNPhotoChooser.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3785B4B3257DD85600B01656 /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; platformFilter = ios; };
 		3785B4BC257DD86200B01656 /* libPhoneNumberiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; };
 		3785B4BD257DD86200B01656 /* libPhoneNumberiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3785B4A8257DD84A00B01656 /* libPhoneNumberiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		37C9E20D2536C305000E9655 /* ohana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 371E0D2F25369F9B00665416 /* ohana.framework */; };
@@ -109,6 +132,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		37761E9A2585DCB4009CD206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37D752BB257490770004CD94 /* UberSignals.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37761E7F2585DC91009CD206;
+			remoteInfo = libUberSignal;
+		};
+		37761F4E2585DFB3009CD206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37761F2B2585DF5A009CD206;
+			remoteInfo = libPhoneNumber;
+		};
 		3785B48F257DD81A00B01656 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */;
@@ -196,6 +233,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		37761C562585D570009CD206 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				37761C5D2585D570009CD206 /* libohana.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37C9E2132536C35E000E9655 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,6 +310,9 @@
 		371E0D7325369FC600665416 /* OHRequiredFieldSelectionFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHRequiredFieldSelectionFilter.m; sourceTree = "<group>"; };
 		371E0D7425369FC600665416 /* OHMinimumSelectedCountSelectionFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHMinimumSelectedCountSelectionFilter.h; sourceTree = "<group>"; };
 		371E0D7525369FC600665416 /* OhanaCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OhanaCommon.h; sourceTree = "<group>"; };
+		37761C582585D570009CD206 /* liblibohana.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibohana.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37761C5A2585D570009CD206 /* libohana.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libohana.h; sourceTree = "<group>"; };
+		37761C5B2585D570009CD206 /* libohana.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libohana.m; sourceTree = "<group>"; };
 		3785B475257DD70400B01656 /* NBNPhotoChooser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NBNPhotoChooser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3785B489257DD81A00B01656 /* CameraPreview.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CameraPreview.xcodeproj; path = ../../NBNPhotoChooser/Example/CameraPreview.xcodeproj; sourceTree = "<group>"; };
 		3785B49E257DD84A00B01656 /* libPhoneNumber.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libPhoneNumber.xcodeproj; path = "../../libPhoneNumber-iOS/libPhoneNumber.xcodeproj"; sourceTree = "<group>"; };
@@ -332,9 +382,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3785B4B3257DD85600B01656 /* libPhoneNumberiOS.framework in Frameworks */,
-				3785B476257DD70400B01656 /* NBNPhotoChooser.framework in Frameworks */,
-				376F61A72574A0AA00E8BC70 /* UberSignals.framework in Frameworks */,
+				372113BA2585F68E00340BCD /* UberSignals.framework in Frameworks */,
+				372113A72585F68900340BCD /* libPhoneNumberiOS.framework in Frameworks */,
+				372113C22585F73A00340BCD /* NBNPhotoChooser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37761C552585D570009CD206 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +549,15 @@
 			path = SelectionFilters;
 			sourceTree = "<group>";
 		};
+		37761C592585D570009CD206 /* libohana */ = {
+			isa = PBXGroup;
+			children = (
+				37761C5A2585D570009CD206 /* libohana.h */,
+				37761C5B2585D570009CD206 /* libohana.m */,
+			);
+			path = libohana;
+			sourceTree = "<group>";
+		};
 		3785B48A257DD81A00B01656 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,6 +577,7 @@
 				3785B4AE257DD84A00B01656 /* libPhoneNumberGeocodingTests.xctest */,
 				3785B4B0257DD84A00B01656 /* libPhoneNumberShortNumber.framework */,
 				3785B4B2257DD84A00B01656 /* libPhoneNumberShortNumberTests.xctest */,
+				37761F4F2585DFB3009CD206 /* liblibPhoneNumber.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -519,6 +586,7 @@
 			isa = PBXGroup;
 			children = (
 				37D752C0257490780004CD94 /* UberSignals.framework */,
+				37761E9B2585DCB4009CD206 /* liblibUberSignal.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -610,6 +678,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				371E0D3025369F9B00665416 /* ohana */,
+				37761C592585D570009CD206 /* libohana */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				B2D91AB306DBA2FC2C6D1BAA /* Pods */,
@@ -622,6 +691,7 @@
 				6003F58A195388D20070C39A /* OhanaExample.app */,
 				6003F5AE195388D20070C39A /* OhanaTests.xctest */,
 				371E0D2F25369F9B00665416 /* ohana.framework */,
+				37761C582585D570009CD206 /* liblibohana.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -790,6 +860,23 @@
 			productReference = 371E0D2F25369F9B00665416 /* ohana.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		37761C572585D570009CD206 /* libohana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37761C6A2585D570009CD206 /* Build configuration list for PBXNativeTarget "libohana" */;
+			buildPhases = (
+				37761C542585D570009CD206 /* Sources */,
+				37761C552585D570009CD206 /* Frameworks */,
+				37761C562585D570009CD206 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libohana;
+			productName = libohana;
+			productReference = 37761C582585D570009CD206 /* liblibohana.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		6003F589195388D20070C39A /* OhanaExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "OhanaExample" */;
@@ -843,6 +930,11 @@
 						DevelopmentTeam = 7Q82Y7SG79;
 						ProvisioningStyle = Automatic;
 					};
+					37761C572585D570009CD206 = {
+						CreatedOnToolsVersion = 12.3;
+						DevelopmentTeam = 7Q82Y7SG79;
+						ProvisioningStyle = Automatic;
+					};
 					6003F589195388D20070C39A = {
 						LastSwiftMigration = 0800;
 					};
@@ -882,11 +974,26 @@
 				6003F589195388D20070C39A /* OhanaExample */,
 				6003F5AD195388D20070C39A /* OhanaTests */,
 				371E0D2E25369F9B00665416 /* ohana */,
+				37761C572585D570009CD206 /* libohana */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		37761E9B2585DCB4009CD206 /* liblibUberSignal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibUberSignal.a;
+			remoteRef = 37761E9A2585DCB4009CD206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		37761F4F2585DFB3009CD206 /* liblibPhoneNumber.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = liblibPhoneNumber.a;
+			remoteRef = 37761F4E2585DFB3009CD206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		3785B490257DD81A00B01656 /* CameraPreview.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
@@ -1014,6 +1121,35 @@
 				371E0DA025369FE900665416 /* OHMinimumSelectedCountSelectionFilter.m in Sources */,
 				371E0DA125369FE900665416 /* OHMaximumSelectedCountSelectionFilter.m in Sources */,
 				371E0DA225369FE900665416 /* OHRequiredFieldSelectionFilter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37761C542585D570009CD206 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37761C6E2585D587009CD206 /* OHContactsDataSource.m in Sources */,
+				37761C6F2585D587009CD206 /* OHContact.m in Sources */,
+				37761C702585D587009CD206 /* OHContactsDataProviderProtocol.m in Sources */,
+				37761C712585D587009CD206 /* OHContactField.m in Sources */,
+				37761C722585D587009CD206 /* OHContactAddress.m in Sources */,
+				37761C732585D587009CD206 /* OHFuzzyMatchingUtility.m in Sources */,
+				37761C742585D587009CD206 /* OHCNContactsDataProvider.m in Sources */,
+				37761C752585D587009CD206 /* OHABAddressBookContactsDataProvider.m in Sources */,
+				37761C762585D587009CD206 /* OHSplitOnFieldTypePostProcessor.m in Sources */,
+				37761C772585D587009CD206 /* OHAlphabeticalSortPostProcessor.m in Sources */,
+				37761C782585D587009CD206 /* OHRequiredFieldPostProcessor.m in Sources */,
+				37761C792585D587009CD206 /* OHCompositeAndPostProcessor.m in Sources */,
+				37761C7A2585D588009CD206 /* OHCompositeOrPostProcessor.m in Sources */,
+				37761C7B2585D588009CD206 /* OHCompositeXorPostProcessor.m in Sources */,
+				37761C7C2585D588009CD206 /* OHStatisticsPostProcessor.m in Sources */,
+				37761C7D2585D588009CD206 /* OHReverseOrderPostProcessor.m in Sources */,
+				37761C7E2585D588009CD206 /* OHPhoneNumberFormattingPostProcessor.m in Sources */,
+				37761C7F2585D588009CD206 /* OHRequiredPostalAddressPostProcessor.m in Sources */,
+				37761C802585D588009CD206 /* OHMinimumSelectedCountSelectionFilter.m in Sources */,
+				37761C812585D588009CD206 /* OHMaximumSelectedCountSelectionFilter.m in Sources */,
+				37761C822585D588009CD206 /* OHRequiredFieldSelectionFilter.m in Sources */,
+				37761C5C2585D570009CD206 /* libohana.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1185,6 +1321,53 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		37761C5E2585D570009CD206 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7Q82Y7SG79;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37761C5F2585D570009CD206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7Q82Y7SG79;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -1399,6 +1582,15 @@
 			buildConfigurations = (
 				371E0D3A25369F9C00665416 /* Debug */,
 				371E0D3B25369F9C00665416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37761C6A2585D570009CD206 /* Build configuration list for PBXNativeTarget "libohana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37761C5E2585D570009CD206 /* Debug */,
+				37761C5F2585D570009CD206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
